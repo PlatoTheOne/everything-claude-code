@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7poster Design Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Roboto:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="ambient-glow"></div>
+    <div class="page">
+      <header class="topbar reveal">
+        <div class="brand-mark">7POSTER</div>
+        <div class="topbar-text" data-i18n="topbarSubtitle">Cash App Design Constitution Showcase</div>
+      </header>
+
+      <main class="layout">
+        <aside class="panel controls reveal">
+          <div class="panel-title" data-i18n="controlsTitle">编辑器控制台</div>
+          <div class="panel-subtitle" data-i18n="controlsSubtitle">Linear 风格控制区，实时驱动右侧预览。</div>
+
+          <label class="field">
+            <span data-i18n="languageLabel">语言</span>
+            <select id="locale" class="input h10">
+              <option value="zh-CN">简体中文</option>
+              <option value="zh-HK">繁體中文</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+
+          <div class="field">
+            <span data-i18n="themeLabel">Poster 风格</span>
+            <div class="theme-switch" role="tablist" aria-label="Theme selection">
+              <button type="button" class="theme-btn active" data-style="cash"></button>
+              <button type="button" class="theme-btn" data-style="cupertino"></button>
+              <button type="button" class="theme-btn" data-style="mountain"></button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span data-i18n="titleLabel">主标题</span>
+            <input id="title" class="input h10" type="text" />
+          </label>
+
+          <label class="field">
+            <span data-i18n="subtitleLabel">副标题</span>
+            <input id="subtitle" class="input h10" type="text" />
+          </label>
+
+          <label class="field">
+            <span data-i18n="amountLabel">核心数据</span>
+            <input id="amount" class="input h10" type="text" />
+          </label>
+
+          <label class="field">
+            <span data-i18n="chipLabel">标签</span>
+            <input id="chip" class="input h10" type="text" />
+          </label>
+
+          <label class="field">
+            <span data-i18n="ctaLabel">按钮文案</span>
+            <input id="cta" class="input h10" type="text" />
+          </label>
+
+          <button id="reset" class="pill-action" type="button" data-i18n="resetButton">重置示例内容</button>
+        </aside>
+
+        <section class="panel preview-wrap reveal">
+          <div class="preview-header">
+            <h1 data-i18n="previewTitle">实时预览</h1>
+            <p data-i18n="previewSubtitle">右侧采用中性棋盘格，确保 WYSIWYG 感知。</p>
+          </div>
+
+          <div class="preview-stage">
+            <article id="poster" class="poster theme-cash">
+              <div class="poster-meta">
+                <span id="posterChip" class="poster-chip">PROFIT MODE</span>
+                <span class="poster-badge" data-i18n="badgeText">LIVE</span>
+              </div>
+              <h2 id="posterTitle" class="poster-title">黑绿高对比金融海报</h2>
+              <p id="posterSubtitle" class="poster-subtitle">统一风格，统一语言，统一设计令牌。</p>
+              <div id="posterAmount" class="poster-amount">$12,480</div>
+              <button id="posterCta" class="poster-cta" type="button">立即生成</button>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
