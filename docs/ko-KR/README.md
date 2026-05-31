@@ -1,4 +1,4 @@
-**언어:** [English](../../README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | 한국어
+**언어:** [English](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | 한국어 | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md)
 
 # Everything Claude Code
 
@@ -16,15 +16,15 @@
 ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
-> **50K+ stars** | **6K+ forks** | **30 contributors** | **6개 언어 지원** | **Anthropic 해커톤 우승**
+> **140K+ stars** | **21K+ forks** | **170+ contributors** | **12+ language ecosystems** | **Anthropic 해커톤 우승**
 
 ---
 
 <div align="center">
 
-**🌐 Language / 语言 / 語言 / 언어**
+**Language / 语言 / 語言 / 언어 / Dil / Язык / Ngôn ngữ**
 
-[**English**](../../README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](README.md)
+[**English**](../../README.md) | [Português (Brasil)](../pt-BR/README.md) | [简体中文](../../README.zh-CN.md) | [繁體中文](../zh-TW/README.md) | [日本語](../ja-JP/README.md) | [한국어](README.md) | [Türkçe](../tr/README.md) | [Русский](../ru/README.md) | [Tiếng Việt](../vi-VN/README.md) | [ไทย](../th/README.md) | [Deutsch](../de-DE/README.md)
 
 </div>
 
@@ -34,7 +34,7 @@
 
 단순한 설정 파일 모음이 아닙니다. 스킬, 직관(Instinct), 메모리 최적화, 지속적 학습, 보안 스캐닝, 리서치 우선 개발을 아우르는 완전한 시스템입니다. 10개월 이상 실제 프로덕트를 만들며 매일 집중적으로 사용해 발전시킨 프로덕션 레벨의 에이전트, 훅, 커맨드, 룰, MCP 설정이 포함되어 있습니다.
 
-**Claude Code**, **Codex**, **Cowork** 등 다양한 AI 에이전트 하네스에서 사용할 수 있습니다.
+**Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Gemini** 등 다양한 AI 에이전트 하네스에서 사용할 수 있습니다.
 
 ---
 
@@ -104,7 +104,7 @@
 
 ---
 
-## 🚀 빠른 시작
+## 빠른 시작
 
 2분 안에 설정 완료:
 
@@ -112,15 +112,15 @@
 
 ```bash
 # 마켓플레이스 추가
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add https://github.com/affaan-m/everything-claude-code
 
 # 플러그인 설치
-/plugin install everything-claude-code@everything-claude-code
+/plugin install ecc@ecc
 ```
 
 ### 2단계: 룰 설치 (필수)
 
-> ⚠️ **중요:** Claude Code 플러그인은 `rules`를 자동으로 배포할 수 없습니다. 수동으로 설치해야 합니다:
+> WARNING: **중요:** Claude Code 플러그인은 `rules`를 자동으로 배포할 수 없습니다. 수동으로 설치해야 합니다:
 
 ```bash
 # 먼저 저장소 클론
@@ -141,20 +141,20 @@ cd everything-claude-code
 
 ```bash
 # 커맨드 실행 (플러그인 설치 시 네임스페이스 형태 사용)
-/everything-claude-code:plan "사용자 인증 추가"
+/ecc:plan "사용자 인증 추가"
 
 # 수동 설치(옵션 2) 시에는 짧은 형태를 사용:
 # /plan "사용자 인증 추가"
 
 # 사용 가능한 커맨드 확인
-/plugin list everything-claude-code@everything-claude-code
+/plugin list ecc@ecc
 ```
 
-✨ **끝!** 이제 16개 에이전트, 65개 스킬, 40개 커맨드를 사용할 수 있습니다.
+**끝!** 이제 16개 에이전트, 65개 스킬, 40개 커맨드를 사용할 수 있습니다.
 
 ---
 
-## 🌐 크로스 플랫폼 지원
+## 크로스 플랫폼 지원
 
 이 플러그인은 **Windows, macOS, Linux**를 완벽하게 지원하며, 주요 IDE(Cursor, OpenCode, Antigravity) 및 CLI 하네스와 긴밀하게 통합됩니다. 모든 훅과 스크립트는 최대 호환성을 위해 Node.js로 작성되었습니다.
 
@@ -201,7 +201,7 @@ export ECC_DISABLED_HOOKS="pre:bash:tmux-reminder,post:edit:typecheck"
 
 ---
 
-## 📦 구성 요소
+## 구성 요소
 
 이 저장소는 **Claude Code 플러그인**입니다 - 직접 설치하거나 컴포넌트를 수동으로 복사할 수 있습니다.
 
@@ -263,7 +263,7 @@ everything-claude-code/
 
 ---
 
-## 🛠️ 에코시스템 도구
+## 에코시스템 도구
 
 ### Skill Creator
 
@@ -314,7 +314,7 @@ Claude Code에서 `/security-scan`을 사용하거나, [GitHub Action](https://g
 
 [GitHub](https://github.com/affaan-m/agentshield) | [npm](https://www.npmjs.com/package/ecc-agentshield)
 
-### 🧠 지속적 학습 v2
+### 지속적 학습 v2
 
 직관(Instinct) 기반 학습 시스템이 여러분의 패턴을 자동으로 학습합니다:
 
@@ -329,7 +329,7 @@ Claude Code에서 `/security-scan`을 사용하거나, [GitHub Action](https://g
 
 ---
 
-## 📋 요구 사항
+## 요구 사항
 
 ### Claude Code CLI 버전
 
@@ -344,22 +344,22 @@ claude --version
 
 ### 중요: 훅 자동 로딩 동작
 
-> ⚠️ **기여자 참고:** `.claude-plugin/plugin.json`에 `"hooks"` 필드를 추가하지 **마세요**. 회귀 테스트로 이를 강제합니다.
+> WARNING: **기여자 참고:** `.claude-plugin/plugin.json`에 `"hooks"` 필드를 추가하지 **마세요**. 회귀 테스트로 이를 강제합니다.
 
 Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으로 로드**합니다. 명시적으로 선언하면 중복 감지 오류가 발생합니다.
 
 ---
 
-## 📥 설치
+## 설치
 
 ### 옵션 1: 플러그인으로 설치 (권장)
 
 ```bash
 # 마켓플레이스 추가
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add https://github.com/affaan-m/everything-claude-code
 
 # 플러그인 설치
-/plugin install everything-claude-code@everything-claude-code
+/plugin install ecc@ecc
 ```
 
 또는 `~/.claude/settings.json`에 직접 추가:
@@ -367,7 +367,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
 ```json
 {
   "extraKnownMarketplaces": {
-    "everything-claude-code": {
+    "ecc": {
       "source": {
         "source": "github",
         "repo": "affaan-m/everything-claude-code"
@@ -375,7 +375,7 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
     }
   },
   "enabledPlugins": {
-    "everything-claude-code@everything-claude-code": true
+    "ecc@ecc": true
   }
 }
 ```
@@ -387,17 +387,17 @@ Claude Code v2.1+는 설치된 플러그인의 `hooks/hooks.json`을 **자동으
 >
 > # 옵션 A: 사용자 레벨 룰 (모든 프로젝트에 적용)
 > mkdir -p ~/.claude/rules
-> cp -r everything-claude-code/rules/common/* ~/.claude/rules/
-> cp -r everything-claude-code/rules/typescript/* ~/.claude/rules/   # 사용하는 스택 선택
+> cp -r everything-claude-code/rules/common ~/.claude/rules/common
+> cp -r everything-claude-code/rules/typescript ~/.claude/rules/typescript   # 사용하는 스택 선택
 >
 > # 옵션 B: 프로젝트 레벨 룰 (현재 프로젝트에만 적용)
 > mkdir -p .claude/rules
-> cp -r everything-claude-code/rules/common/* .claude/rules/
+> cp -r everything-claude-code/rules/common .claude/rules/common
 > ```
 
 ---
 
-### 🔧 옵션 2: 수동 설치
+### 옵션 2: 수동 설치
 
 설치할 항목을 직접 선택하고 싶다면:
 
@@ -409,8 +409,8 @@ git clone https://github.com/affaan-m/everything-claude-code.git
 cp everything-claude-code/agents/*.md ~/.claude/agents/
 
 # 룰 복사 (common + 언어별)
-cp -r everything-claude-code/rules/common/* ~/.claude/rules/
-cp -r everything-claude-code/rules/typescript/* ~/.claude/rules/   # 사용하는 스택 선택
+cp -r everything-claude-code/rules/common ~/.claude/rules/common
+cp -r everything-claude-code/rules/typescript ~/.claude/rules/typescript   # 사용하는 스택 선택
 
 # 커맨드 복사
 cp everything-claude-code/commands/*.md ~/.claude/commands/
@@ -422,7 +422,7 @@ cp -r everything-claude-code/skills/search-first ~/.claude/skills/
 
 ---
 
-## 🎯 핵심 개념
+## 핵심 개념
 
 ### 에이전트
 
@@ -483,14 +483,14 @@ rules/
 
 ---
 
-## 🗺️ 어떤 에이전트를 사용해야 할까?
+## 어떤 에이전트를 사용해야 할까?
 
 어디서 시작해야 할지 모르겠다면 이 참고표를 보세요:
 
 | 하고 싶은 것 | 사용할 커맨드 | 사용되는 에이전트 |
 |-------------|-------------|-----------------|
-| 새 기능 계획하기 | `/everything-claude-code:plan "인증 추가"` | planner |
-| 시스템 아키텍처 설계 | `/everything-claude-code:plan` + architect 에이전트 | architect |
+| 새 기능 계획하기 | `/ecc:plan "인증 추가"` | planner |
+| 시스템 아키텍처 설계 | `/ecc:plan` + architect 에이전트 | architect |
 | 테스트를 먼저 작성하며 코딩 | `/tdd` | tdd-guide |
 | 방금 작성한 코드 리뷰 | `/code-review` | code-reviewer |
 | 빌드 실패 수정 | `/build-fix` | build-error-resolver |
@@ -507,7 +507,7 @@ rules/
 
 **새로운 기능 시작:**
 ```
-/everything-claude-code:plan "OAuth를 사용한 사용자 인증 추가"
+/ecc:plan "OAuth를 사용한 사용자 인증 추가"
                                               → planner가 구현 청사진 작성
 /tdd                                          → tdd-guide가 테스트 먼저 작성 강제
 /code-review                                  → code-reviewer가 코드 검토
@@ -529,13 +529,13 @@ rules/
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 <details>
 <summary><b>설치된 에이전트/커맨드 확인은 어떻게 하나요?</b></summary>
 
 ```bash
-/plugin list everything-claude-code@everything-claude-code
+/plugin list ecc@ecc
 ```
 
 플러그인에서 사용할 수 있는 모든 에이전트, 커맨드, 스킬을 보여줍니다.
@@ -573,7 +573,7 @@ MCP 서버가 너무 많으면 컨텍스트를 잡아먹습니다. 각 MCP 도�
 cp everything-claude-code/agents/*.md ~/.claude/agents/
 
 # 룰만
-cp -r everything-claude-code/rules/common/* ~/.claude/rules/
+cp -r everything-claude-code/rules/common ~/.claude/rules/common
 ```
 
 각 컴포넌트는 완전히 독립적입니다.
@@ -602,7 +602,7 @@ cp -r everything-claude-code/rules/common/* ~/.claude/rules/
 
 ---
 
-## 🧪 테스트 실행
+## 테스트 실행
 
 ```bash
 # 모든 테스트 실행
@@ -616,7 +616,7 @@ node tests/hooks/hooks.test.js
 
 ---
 
-## 🤝 기여하기
+## 기여하기
 
 **기여를 환영합니다.**
 
@@ -631,7 +631,7 @@ node tests/hooks/hooks.test.js
 ### 기여 아이디어
 
 - 언어별 스킬 (Rust, C#, Swift, Kotlin) — Go, Python, Java는 이미 포함
-- 프레임워크별 설정 (Rails, Laravel, FastAPI, NestJS) — Django, Spring Boot는 이미 포함
+- 프레임워크별 설정 (Rails, Laravel, FastAPI) — Django, NestJS, Spring Boot는 이미 포함
 - DevOps 에이전트 (Kubernetes, Terraform, AWS, Docker)
 - 테스팅 전략 (다양한 프레임워크, 비주얼 리그레션)
 - 도메인별 지식 (ML, 데이터 엔지니어링, 모바일)
@@ -687,7 +687,7 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 ---
 
-## ⚠️ 중요 참고 사항
+## WARNING: 중요 참고 사항
 
 ### 커스터마이징
 
@@ -699,7 +699,7 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 ---
 
-## 💜 스폰서
+## 스폰서
 
 이 프로젝트는 무료 오픈소스입니다. 스폰서의 지원으로 유지보수와 성장이 이루어집니다.
 
@@ -707,13 +707,13 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 ---
 
-## 🌟 Star 히스토리
+## Star 히스토리
 
 [![Star History Chart](https://api.star-history.com/svg?repos=affaan-m/everything-claude-code&type=Date)](https://star-history.com/#affaan-m/everything-claude-code&Date)
 
 ---
 
-## 🔗 링크
+## 링크
 
 - **요약 가이드 (여기서 시작):** [The Shorthand Guide to Everything Claude Code](https://x.com/affaanmustafa/status/2012378465664745795)
 - **상세 가이드 (고급):** [The Longform Guide to Everything Claude Code](https://x.com/affaanmustafa/status/2014040193557471352)
@@ -722,7 +722,7 @@ Claude Code 사용 비용이 부담된다면 토큰 소비를 관리해야 합�
 
 ---
 
-## 📄 라이선스
+## 라이선스
 
 MIT - 자유롭게 사용하고, 필요에 따라 수정하고, 가능하다면 기여해 주세요.
 
